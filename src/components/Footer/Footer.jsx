@@ -38,6 +38,7 @@ const Footer = () => {
         <FooterItems sectionName="Social Media" sectionList={socialMedia} /> */}
         <div>© 2024 My Little Lemon</div>
 
+
     </footer>);
 }
 
