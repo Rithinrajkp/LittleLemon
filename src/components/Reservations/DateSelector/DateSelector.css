@@ -1,0 +1,107 @@
+.reservation__date-selector {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px;
+    font-family: 'Markazi Text', serif;
+    font-size: 20px;
+}
+
+.reservation__date-selector-date-time {
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: space-between;
+}
+
+.title {
+    color: #264646;
+}
+.date-time {
+    /* border: 1px solid red; */
+    display: flex;
+
+    flex-direction: column;
+    justify-content: center;
+
+    text-align: center;
+
+    padding: 5px;
+}
+
+.date, .time {
+    background-color: #264646;
+    color: #f4ce14a1;
+    border: 1px solid #f4ce14a1;
+    border-radius: 7px;
+    padding: 7px;
+}
+
+.open-closed {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0px;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+.closed {
+    color: red;
+}
+
+.choose-date {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    padding: 1rem;
+    border-radius: 10px;
+}
+
+input[type="date"] {
+    color: black;
+    font-size: 24px;
+    padding: 10px;
+    border-radius: 5px;
+    width: 200px;
+    height: 40px;
+}
+
+::-webkit-calendar-picker-indicator {
+    background-color: #ffffff;
+    padding: 5px;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.ocassion-selector {
+        background-color: #264646;
+        color: #ffffff;
+        font-size: 24px;
+        padding: 10px;
+        border: none;
+        outline: none;
+        border-radius: 5px;
+    width: 200px;
+        height: 60px;
+}
+
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-image: url("data:image/svg+xml;utf8,<svg fill='white' height='30' viewBox='0 0 24 24' width='30' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>");
+    background-repeat: no-repeat;
+    background-position-x: 98%;
+    background-position-y: 50%;
+}
+
+@media screen and (max-width: 780px) {
+    .reservation__date-selector {
+        font-size: 28px;
+        padding: 25px;
+    }
+    .choose-date {
+        flex-direction: column;
+    }
+}
